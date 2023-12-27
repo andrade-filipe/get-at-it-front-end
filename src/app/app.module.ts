@@ -8,10 +8,18 @@ import { ErrorHandlerService } from './core/error-handler/error-handler.service'
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { GlobalHttpInterceptor } from './infrastructure/interceptors/global-http.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavBarComponent } from './components/smart/nav-bar/nav-bar.component';
+import { TasksComponent } from './components/smart/tasks/tasks.component';
+import { PomodoroComponent } from './components/smart/pomodoro/pomodoro.component';
+import { SprintComponent } from './components/smart/sprint/sprint.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    TasksComponent,
+    PomodoroComponent,
+    SprintComponent
   ],
   imports: [
     BrowserModule,

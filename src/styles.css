@@ -1,4 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --clr-background: #030303;
+    --clr-text: #f8f8ff;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+    --clr-mustard: #FFD447;
+    --clr-orange: #F85E00;
+    --clr-turquioise: #3CDBD3;
+
+    --font-primary: 'Shrikhand', serif;
+    --font-secondary: 'Epilogue', sans-serif;
+
+    --fw-light: 200;
+    --fw-normal: 400;
+    --fw-semibold: 600;
+    --fw-bold: 800;
+}
