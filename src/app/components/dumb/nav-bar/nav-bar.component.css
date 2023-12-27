@@ -1,0 +1,28 @@
+.nav-bar__component{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--horizontal-nav-bar-spacing);
+    background-color: var(--clr-background);
+    padding: var(--vertical-nav-bar-spacing) 0;
+    margin: 0;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.nav-bar__item{
+    font-family: var(--font-secondary);
+    font-size: var(--fs-large);
+    text-decoration: none;
+    color: var(--clr-text);
+}
+
+.nav-bar__item:hover,
+.nav-bar__item:focus-within,
+.nav-bar__item.selected{
+    transform: scale(1.15);
+}

@@ -1,0 +1,28 @@
+.logo__div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:var(--vertical-nav-bar-spacing) 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+.logo{
+    font-family: var(--font-primary);
+    font-size: var(--fs-large);
+    margin: 0;
+    padding: 0;
+}
+
+.get{
+    color: var(--clr-mustard);
+}
+
+.at{
+    color: var(--clr-orange);
+}
+
+.it{
+    color: var(--clr-turquoise);
+}

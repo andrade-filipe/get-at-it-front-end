@@ -8,10 +8,14 @@ import { ErrorHandlerService } from './core/error-handler/error-handler.service'
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { GlobalHttpInterceptor } from './infrastructure/interceptors/global-http.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavBarComponent } from './components/smart/nav-bar/nav-bar.component';
+import { NavBarComponent } from './components/dumb/nav-bar/nav-bar.component';
 import { TasksComponent } from './components/smart/tasks/tasks.component';
 import { PomodoroComponent } from './components/smart/pomodoro/pomodoro.component';
 import { SprintComponent } from './components/smart/sprint/sprint.component';
+import { TasksViewComponent } from './components/view/tasks-view/tasks-view.component';
+import { PomodoroViewComponent } from './components/view/pomodoro-view/pomodoro-view.component';
+import { SprintViewComponent } from './components/view/sprint-view/sprint-view.component';
+import { LogoComponent } from './components/dumb/logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { SprintComponent } from './components/smart/sprint/sprint.component';
     NavBarComponent,
     TasksComponent,
     PomodoroComponent,
-    SprintComponent
+    SprintComponent,
+    TasksViewComponent,
+    PomodoroViewComponent,
+    SprintViewComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,

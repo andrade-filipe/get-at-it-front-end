@@ -1,10 +1,10 @@
 :root {
-    --clr-background: #030303;
-    --clr-text: #f8f8ff;
+    --clr-background: #f8f8ff;
+    --clr-text: #030303;
 
     --clr-mustard: #FFD447;
     --clr-orange: #F85E00;
-    --clr-turquioise: #3CDBD3;
+    --clr-turquoise: #3CDBD3;
 
     --font-primary: 'Shrikhand', serif;
     --font-secondary: 'Epilogue', sans-serif;
@@ -13,4 +13,16 @@
     --fw-normal: 400;
     --fw-semibold: 600;
     --fw-bold: 800;
+
+    --fs-small: 0.89rem;
+    --fs-normal: 1.05rem;
+    --fs-medium: 1.25rem;
+    --fs-large: 1.6rem;
+
+    --horizontal-nav-bar-spacing: 2.5rem;
+    --vertical-nav-bar-spacing: 2rem;
+}
+
+.light-mode{
+    background-color: var(--clr-background);
 }
