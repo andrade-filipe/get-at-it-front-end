@@ -1,3 +1,5 @@
+@import "bootstrap/dist/css/bootstrap.css";
+
 :root {
     --clr-background: #f8f8ff;
     --clr-text: #030303;
