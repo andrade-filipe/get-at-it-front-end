@@ -82,6 +82,9 @@
             },
             "development": {
               "buildTarget": "get-at-it-front-end:build:development"
+            },
+            "options": {
+                "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
