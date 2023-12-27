@@ -2,12 +2,12 @@
     --clr-background: #f8f8ff;
     --clr-text: #030303;
 
-    --clr-mustard: #FFD447;
-    --clr-orange: #F85E00;
-    --clr-turquoise: #3CDBD3;
+    --clr-mustard: #ffd447;
+    --clr-orange: #f85e00;
+    --clr-turquoise: #3cdbd3;
 
-    --font-primary: 'Shrikhand', serif;
-    --font-secondary: 'Epilogue', sans-serif;
+    --font-primary: "Shrikhand", serif;
+    --font-secondary: "Epilogue", sans-serif;
 
     --fw-light: 200;
     --fw-normal: 400;
@@ -23,6 +23,6 @@
     --vertical-nav-bar-spacing: 2rem;
 }
 
-.light-mode{
+.light-mode {
     background-color: var(--clr-background);
 }

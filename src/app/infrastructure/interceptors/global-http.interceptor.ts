@@ -2,12 +2,11 @@ import { HttpEvent, HttpHandler, HttpInterceptor, HttpInterceptorFn, HttpRequest
 import { Observable, catchError, retry, throwError, timer } from 'rxjs';
 
 export class GlobalHttpInterceptor implements HttpInterceptor {
-
-    constructor(){}
+    constructor() {}
 
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         return next.handle(request).pipe(
-            catchError((err:Error) => {
+            catchError((err: Error) => {
                 return throwError(() => {
                     console.log(err.message);
                 });
@@ -18,4 +17,4 @@ export class GlobalHttpInterceptor implements HttpInterceptor {
             })
         );
     }
-};
+}

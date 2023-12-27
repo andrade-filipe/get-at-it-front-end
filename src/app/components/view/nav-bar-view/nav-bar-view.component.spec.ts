@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PomodoroComponent } from './pomodoro.component';
+import { NavBarViewComponent } from './nav-bar-view.component';
 
-describe('PomodoroComponent', () => {
-    let component: PomodoroComponent;
-    let fixture: ComponentFixture<PomodoroComponent>;
+describe('NavBarViewComponent', () => {
+    let component: NavBarViewComponent;
+    let fixture: ComponentFixture<NavBarViewComponent>;
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [PomodoroComponent],
+            declarations: [NavBarViewComponent],
         }).compileComponents();
 
-        fixture = TestBed.createComponent(PomodoroComponent);
+        fixture = TestBed.createComponent(NavBarViewComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

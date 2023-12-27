@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-pomodoro',
-  templateUrl: './pomodoro.component.html',
-  styleUrl: './pomodoro.component.css'
+    selector: 'app-pomodoro',
+    templateUrl: './pomodoro.component.html',
+    styleUrl: './pomodoro.component.css',
 })
-export class PomodoroComponent {
-
-}
+export class PomodoroComponent {}
