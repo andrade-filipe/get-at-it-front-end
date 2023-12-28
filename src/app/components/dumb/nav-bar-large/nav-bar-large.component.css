@@ -15,10 +15,7 @@
 }
 
 .nav-bar__item {
-    font-family: var(--font-secondary);
-    font-size: var(--fs-large);
     text-decoration: none;
-    color: var(--clr-text);
 }
 
 .nav-bar__item:hover,
