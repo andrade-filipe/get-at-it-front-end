@@ -19,7 +19,7 @@ import { ComponentsModule } from './components/components.module';
         HttpClientModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        ComponentsModule
+        ComponentsModule,
     ],
     providers: [
         provideClientHydration(),
@@ -38,5 +38,4 @@ import { ComponentsModule } from './components/components.module';
         },
     ],
     bootstrap: [AppComponent],
-})
-export class AppModule {}
+})export class AppModule {}

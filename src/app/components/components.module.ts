@@ -18,6 +18,8 @@ import { NavBarComponent } from './smart/nav-bar-smart/nav-bar.component';
 import { NavBarViewComponent } from './view/nav-bar-view/nav-bar-view.component';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
+import { MAT_CHECKBOX_DEFAULT_OPTIONS, MatCheckboxDefaultOptions, MatCheckboxModule } from '@angular/material/checkbox';
+import { provideClientHydration } from '@angular/platform-browser';
 
 @NgModule({
     declarations: [
@@ -41,15 +43,29 @@ import { AppRoutingModule } from '../app-routing.module';
     imports: [
         CommonModule,
         AppRoutingModule,
-        FormsModule
+        FormsModule,
+        MatCheckboxModule
     ],
     exports: [
+        TasksComponent,
         LogoComponent,
         NavBarViewComponent,
         NavBarComponent,
         NavBarLargeComponent,
-        NavBarMobileComponent
+        NavBarMobileComponent,
+        PomodoroComponent,
+        SprintComponent,
+        TasksViewComponent,
+        PomodoroViewComponent,
+        SprintViewComponent,
+        CreateTaskComponent,
+        CardTaskComponent,
+        TimerPomodoroComponent,
+        CreateSprintComponent,
+        CardSprintComponent,
     ],
-    providers: [],
-})
-export class ComponentsModule {}
+    providers: [
+        provideClientHydration(),
+        {provide: MAT_CHECKBOX_DEFAULT_OPTIONS, useValue: { clickAction: 'check' } as MatCheckboxDefaultOptions}
+    ],
+})export class ComponentsModule {}
