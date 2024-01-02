@@ -1,0 +1,16 @@
+.new-sprint__button{
+    width: 100%;
+
+    background: var(--clr-background);
+    text-align: start;
+
+    border-width: 3px;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-color: var(--clr-text);
+}
+
+.new-sprint__button:hover{
+    opacity: 0.6;
+}
