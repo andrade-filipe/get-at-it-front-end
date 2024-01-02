@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, HostListener, Output } from '@angular/core';
+import { MatButtonToggleChange} from '@angular/material/button-toggle';
 
 @Component({
   selector: 'app-theme-button',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class ThemeButtonComponent {
 
+    @Output() changeTheme = new EventEmitter<string>();
+
+    @HostListener('click', ['$event'])
+    onClick(event: MatButtonToggleChange){
+        this.changeTheme.emit(event.value);
+    }
 }

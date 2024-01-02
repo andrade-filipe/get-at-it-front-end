@@ -1,4 +1,4 @@
-<mat-button-toggle-group name="appTheme">
+<mat-button-toggle-group name="appTheme" (change)="onClick($event)">
     <mat-button-toggle value="light">Light</mat-button-toggle>
     <mat-button-toggle value="dark">Dark</mat-button-toggle>
 </mat-button-toggle-group>
