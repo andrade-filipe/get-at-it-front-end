@@ -159,3 +159,27 @@ img, picture, svg, video{
     font-size: var(--fs-small);
     color: var(--clr-text);
 }
+
+.button-black-white{
+    background: var(--clr-background);
+    padding: 0.5rem 1rem;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--clr-text);
+    border-radius: 1rem;
+
+    font-family: var(--font-secondary);
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-semibold);
+}
+
+.button-black-white:hover{
+    background: var(--clr-text);
+    color: var(--clr-background);
+    opacity: 0.8;
+}
+
+.button-black-white:active{
+    border-color: var(--clr-background);
+}

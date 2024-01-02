@@ -1,0 +1,18 @@
+.pomodoro-timer__div{
+    border-radius: 1.6rem;
+    border-color: var(--clr-text);
+    border-width: 3px;
+    border-style: solid;
+
+    padding: 1rem 0;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.pomodoro-timer__time{
+    font-family: var(--font-secondary);
+    font-weight: var(--fw-bold);
+    font-size: 5rem;
+}

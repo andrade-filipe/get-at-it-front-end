@@ -21,6 +21,7 @@ import { NavBarViewComponent } from './components/view/nav-bar-view/nav-bar-view
 import { NavBarLargeComponent } from './components/dumb/nav-bar-large/nav-bar-large.component';
 import { CreateTaskComponent } from './components/dumb/create-task/create-task.component';
 import { CardTaskComponent } from './components/dumb/card-task/card-task.component';
+import { TimerPomodoroComponent } from './components/dumb/timer-pomodoro/timer-pomodoro.component';
 
 @NgModule({
     declarations: [
@@ -38,6 +39,7 @@ import { CardTaskComponent } from './components/dumb/card-task/card-task.compone
         NavBarLargeComponent,
         CreateTaskComponent,
         CardTaskComponent,
+        TimerPomodoroComponent,
     ],
     imports: [BrowserModule, HttpClientModule, AppRoutingModule, BrowserAnimationsModule],
     providers: [
