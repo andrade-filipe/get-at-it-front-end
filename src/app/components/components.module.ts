@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { TimerPomodoroComponent } from './dumb/pomodoro-dumbs/timer-pomodoro/timer-pomodoro.component';
 import { CardSprintComponent } from './dumb/sprint-dumbs/card-sprint/card-sprint.component';
 import { CreateSprintComponent } from './dumb/sprint-dumbs/create-sprint/create-sprint.component';
@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
 import { MAT_CHECKBOX_DEFAULT_OPTIONS, MatCheckboxDefaultOptions, MatCheckboxModule } from '@angular/material/checkbox';
 import { provideClientHydration } from '@angular/platform-browser';
+import { UserConfigComponent } from './dumb/nav-dumbs/user-config/user-config.component';
 
 @NgModule({
     declarations: [
@@ -39,9 +40,11 @@ import { provideClientHydration } from '@angular/platform-browser';
         TimerPomodoroComponent,
         CreateSprintComponent,
         CardSprintComponent,
+        UserConfigComponent,
     ],
     imports: [
         CommonModule,
+        NgOptimizedImage,
         AppRoutingModule,
         FormsModule,
         MatCheckboxModule

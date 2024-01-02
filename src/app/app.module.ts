@@ -9,6 +9,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { GlobalHttpInterceptor } from './infrastructure/interceptors/global-http.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentsModule } from './components/components.module';
+import { UserConfigComponent } from './components/dumb/nav-dumbs/user-config/user-config.component';
 
 @NgModule({
     declarations: [
