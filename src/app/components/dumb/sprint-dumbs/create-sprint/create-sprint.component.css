@@ -9,6 +9,8 @@
     border-left: 0;
     border-right: 0;
     border-color: var(--clr-text);
+
+    padding: 0.5rem 0;
 }
 
 .new-sprint__button:hover{
