@@ -182,4 +182,5 @@ img, picture, svg, video{
 
 .button-black-white:active{
     border-color: var(--clr-background);
+    transform: scale(0.96);
 }
