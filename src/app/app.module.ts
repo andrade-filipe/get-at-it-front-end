@@ -19,6 +19,8 @@ import { LogoComponent } from './components/dumb/logo/logo.component';
 import { NavBarComponent } from './components/smart/nav-bar/nav-bar.component';
 import { NavBarViewComponent } from './components/view/nav-bar-view/nav-bar-view.component';
 import { NavBarLargeComponent } from './components/dumb/nav-bar-large/nav-bar-large.component';
+import { CreateTaskComponent } from './components/dumb/create-task/create-task.component';
+import { CardTaskComponent } from './components/dumb/card-task/card-task.component';
 
 @NgModule({
     declarations: [
@@ -34,6 +36,8 @@ import { NavBarLargeComponent } from './components/dumb/nav-bar-large/nav-bar-la
         NavBarComponent,
         NavBarViewComponent,
         NavBarLargeComponent,
+        CreateTaskComponent,
+        CardTaskComponent,
     ],
     imports: [BrowserModule, HttpClientModule, AppRoutingModule, BrowserAnimationsModule],
     providers: [
