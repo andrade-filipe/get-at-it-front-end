@@ -20,7 +20,8 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
 import { MAT_CHECKBOX_DEFAULT_OPTIONS, MatCheckboxDefaultOptions, MatCheckboxModule } from '@angular/material/checkbox';
 import { provideClientHydration } from '@angular/platform-browser';
-import { UserConfigComponent } from './dumb/nav-dumbs/user-config/user-config.component';
+import { UserConfigButtonComponent } from './dumb/nav-dumbs/user-config-button/user-config-button.component';
+import { UserConfigViewComponent } from '../user-config-view/user-config-view.component';
 
 @NgModule({
     declarations: [
@@ -40,7 +41,8 @@ import { UserConfigComponent } from './dumb/nav-dumbs/user-config/user-config.co
         TimerPomodoroComponent,
         CreateSprintComponent,
         CardSprintComponent,
-        UserConfigComponent,
+        UserConfigButtonComponent,
+        UserConfigViewComponent,
     ],
     imports: [
         CommonModule,
@@ -66,6 +68,8 @@ import { UserConfigComponent } from './dumb/nav-dumbs/user-config/user-config.co
         TimerPomodoroComponent,
         CreateSprintComponent,
         CardSprintComponent,
+        UserConfigButtonComponent,
+        UserConfigViewComponent,
     ],
     providers: [
         provideClientHydration(),
