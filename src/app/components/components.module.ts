@@ -21,7 +21,10 @@ import { AppRoutingModule } from '../app-routing.module';
 import { MAT_CHECKBOX_DEFAULT_OPTIONS, MatCheckboxDefaultOptions, MatCheckboxModule } from '@angular/material/checkbox';
 import { provideClientHydration } from '@angular/platform-browser';
 import { UserConfigButtonComponent } from './dumb/nav-dumbs/user-config-button/user-config-button.component';
-import { UserConfigViewComponent } from '../user-config-view/user-config-view.component';
+import { UserConfigViewComponent } from './view/user-config-view/user-config-view.component';
+import { UserConfigComponent } from './smart/user-config-smart/user-config.component';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { ThemeButtonComponent } from './dumb/user-config-dumbs/theme-button/theme-button.component';
 
 @NgModule({
     declarations: [
@@ -43,13 +46,16 @@ import { UserConfigViewComponent } from '../user-config-view/user-config-view.co
         CardSprintComponent,
         UserConfigButtonComponent,
         UserConfigViewComponent,
+        UserConfigComponent,
+        ThemeButtonComponent,
     ],
     imports: [
         CommonModule,
         NgOptimizedImage,
         AppRoutingModule,
         FormsModule,
-        MatCheckboxModule
+        MatCheckboxModule,
+        MatButtonToggleModule,
     ],
     exports: [
         TasksComponent,
@@ -70,6 +76,8 @@ import { UserConfigViewComponent } from '../user-config-view/user-config-view.co
         CardSprintComponent,
         UserConfigButtonComponent,
         UserConfigViewComponent,
+        UserConfigComponent,
+        ThemeButtonComponent,
     ],
     providers: [
         provideClientHydration(),
