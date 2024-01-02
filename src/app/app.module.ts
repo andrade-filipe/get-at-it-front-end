@@ -23,6 +23,7 @@ import { CreateTaskComponent } from './components/dumb/task/create-task/create-t
 import { CardTaskComponent } from './components/dumb/task/card-task/card-task.component';
 import { TimerPomodoroComponent } from './components/dumb/pomodoro/timer-pomodoro/timer-pomodoro.component';
 import { CreateSprintComponent } from './components/dumb/sprint/create-sprint/create-sprint.component';
+import { CardSprintComponent } from './components/dumb/sprint/card-sprint/card-sprint.component';
 
 @NgModule({
     declarations: [
@@ -42,6 +43,7 @@ import { CreateSprintComponent } from './components/dumb/sprint/create-sprint/cr
         CardTaskComponent,
         TimerPomodoroComponent,
         CreateSprintComponent,
+        CardSprintComponent,
     ],
     imports: [BrowserModule, HttpClientModule, AppRoutingModule, BrowserAnimationsModule],
     providers: [
