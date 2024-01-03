@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-user-config',
@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class UserConfigComponent {
 
+    constructor(){
+
+    }
+
+    changeTheme(event: string){
+        console.log(event);
+        if(event.match('light')){
+        } else if(event.match('dark')){
+        }
+    }
 }

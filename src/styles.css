@@ -43,8 +43,14 @@ img, picture, svg, video{
 
 /*UTILS*/
 
-.light-mode {
-    background-color: var(--clr-background);
+body {
+    --clr-text: #030303;
+    --clr-background: #f8f8ff;
+}
+
+body.dark-mode{
+    --clr-background: #030303;
+    --clr-text: #f8f8ff;
 }
 
 .large-text{
