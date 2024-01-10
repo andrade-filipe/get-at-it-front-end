@@ -8,4 +8,8 @@ import { Task } from '../../../model/interfaces/task';
     styleUrl: './tasks.component.css',
 })
 export class TasksComponent{
+
+    createTask(){
+        console.log("event emitted");
+    }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-create-task',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './create-task.component.css'
 })
 export class CreateTaskComponent {
+    @Output() createTask = new EventEmitter<void>();
 
+    onClick() {
+        console.log('is clicking')
+        this.createTask.emit();
+    }
 }
