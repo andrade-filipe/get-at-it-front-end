@@ -4,6 +4,8 @@
     --clr-background: #f8f8ff;
     --clr-text: #030303;
 
+    --clr-button-hover: hsla(0, 0%, 1%, 0.1);
+
     --clr-mustard: #ffd447;
     --clr-orange: #f85e00;
     --clr-turquoise: #3cdbd3;
@@ -33,6 +35,7 @@
 }
 
 body {
+    background: var(--clr-background) ;
     min-height: 100vh;
 }
 

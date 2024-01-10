@@ -4,15 +4,17 @@
     background: var(--clr-background);
     text-align: start;
 
-    border-width: 3px;
+    border-width: 1px;
     border-style: solid;
     border-left: 0;
     border-right: 0;
     border-color: var(--clr-text);
 
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
 }
 
 .new-task__button:hover{
-    opacity: 0.6;
+    background-color: var(--clr-button-hover);
+    border: none;
+    transition: 100ms;
 }
