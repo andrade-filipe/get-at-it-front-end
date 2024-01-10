@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-create-sprint',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './create-sprint.component.css'
 })
 export class CreateSprintComponent {
+    @Output() createSprint = new EventEmitter<void>();
 
+    onClick() {
+        this.createSprint.emit();
+    }
 }

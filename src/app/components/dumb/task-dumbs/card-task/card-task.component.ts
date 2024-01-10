@@ -8,5 +8,5 @@ import { setupTasks } from '../../../common/setup-test-task';
   styleUrl: './card-task.component.css'
 })
 export class CardTaskComponent{
-    @Input() tasks : Task[] = setupTasks();
+    @Input() tasks : Task[] = [];
 }

@@ -8,5 +8,5 @@ import { setupSprints } from '../../../common/setup-test-sprint';
   styleUrl: './card-sprint.component.css'
 })
 export class CardSprintComponent {
-    @Input() sprints : Sprint[] = setupSprints();
+    @Input() sprints : Sprint[] = [];
 }

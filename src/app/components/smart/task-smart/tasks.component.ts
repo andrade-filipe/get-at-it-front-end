@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { setupTasks } from '../../common/setup-test-task';
-import { Task } from '../../../model/interfaces/task';
 
 @Component({
     selector: 'app-tasks',
@@ -9,7 +8,8 @@ import { Task } from '../../../model/interfaces/task';
 })
 export class TasksComponent{
 
-    createTask(){
-        console.log("event emitted");
+    tasks$ = setupTasks();
+
+    handleCreateTask(): void{
     }
 }

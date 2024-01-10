@@ -1,2 +1,8 @@
-
-<app-create-task (createTask)="createTask()"></app-create-task>
+<div class="container">
+    <div class="row">
+        <app-card-task [tasks]="tasks$"/>
+    </div>
+    <div class="row">
+        <app-create-task (createTask)="handleCreateTask()" />
+    </div>
+</div>

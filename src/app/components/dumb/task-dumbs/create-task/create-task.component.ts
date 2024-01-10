@@ -9,7 +9,6 @@ export class CreateTaskComponent {
     @Output() createTask = new EventEmitter<void>();
 
     onClick() {
-        console.log('is clicking')
         this.createTask.emit();
     }
 }
