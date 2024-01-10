@@ -7,5 +7,4 @@ import { setupSprints } from '../../common/setup-test-sprint';
     styleUrl: './sprint.component.css',
 })
 export class SprintComponent {
-    sprints$ = setupSprints();
 }

@@ -51,7 +51,6 @@ import { ThemeButtonComponent } from './dumb/user-config-dumbs/theme-button/them
     ],
     imports: [
         CommonModule,
-        NgOptimizedImage,
         AppRoutingModule,
         FormsModule,
         MatCheckboxModule,
