@@ -13,8 +13,8 @@ const TASKS : Task[] = [
         "id": 3,
         "title": "E Mais Isso"
     }
-]
+];
 
 export function setupTasks(): Task[] {
-    return Object.values(TASKS) as Task[];
+    return TASKS;
 }
