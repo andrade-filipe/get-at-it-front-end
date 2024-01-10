@@ -7,5 +7,5 @@ import { Task } from '../../../../model/interfaces/task';
   styleUrl: './card-task.component.css'
 })
 export class CardTaskComponent {
-    @Input() tasks !: Task[];
+    @Input() tasks : Task[] = [];
 }

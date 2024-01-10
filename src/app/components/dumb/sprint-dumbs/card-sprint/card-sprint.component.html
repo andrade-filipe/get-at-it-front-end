@@ -1,15 +1,8 @@
 @for(sprint of sprints; track sprint) {
     <div class="card-sprint__div">
-        {{sprint.title}}
+        <h2 class="medium-text-semibold card-sprint__title">{{sprint.title}}</h2>
+        <button class="card-sprint__select-button | medium-text-semibold button-black-white">get at it!</button>
     </div>
+} @empty {
+    <h2 class="medium-text-semibold empty-text | text-center">There are no Sprints!</h2>
 }
-
-<!-- example to make styling easy -->
-<div class="card-sprint__div">
-    <h2 class="medium-text-semibold card-sprint__title">Sprint Title</h2>
-    <button class="card-sprint__select-button | medium-text-semibold button-black-white">get at it!</button>
-</div>
-<div class="card-sprint__div">
-    <h2 class="medium-text-semibold card-sprint__title">Sprint Title</h2>
-    <button class="card-sprint__select-button | medium-text-semibold button-black-white">get at it!</button>
-</div>

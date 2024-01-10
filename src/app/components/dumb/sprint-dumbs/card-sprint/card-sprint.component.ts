@@ -7,5 +7,5 @@ import { Sprint } from '../../../../model/interfaces/sprint';
   styleUrl: './card-sprint.component.css'
 })
 export class CardSprintComponent {
-    @Input() sprints !: Sprint[];
+    @Input() sprints : Sprint[] = [];
 }

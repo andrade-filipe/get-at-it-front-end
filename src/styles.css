@@ -169,6 +169,10 @@ body.dark-mode{
     color: var(--clr-text);
 }
 
+.empty-text{
+    opacity: 0.3;
+}
+
 .button-black-white{
     background: var(--clr-background);
     padding: 0.5rem 1rem;
