@@ -202,3 +202,19 @@ body.dark-mode{
 .button-black-white:disabled{
     border-color:var(--clr-button-disabled);
 }
+
+.top-divider{
+    border-color: var(--clr-text);
+    border-style: solid;
+    border-width: 1px;
+    border-left: 0;
+    border-bottom: 0;
+    border-right: 0;
+}
+.top-bottom-divider{
+    border-color: var(--clr-text);
+    border-style: solid;
+    border-width: 1px;
+    border-left: 0;
+    border-right: 0;
+}

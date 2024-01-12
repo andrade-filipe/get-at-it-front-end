@@ -4,13 +4,6 @@
     justify-content: space-between;
 
     padding: 0.5rem 1rem;
-
-    border-color: var(--clr-text);
-    border-style: solid;
-    border-width: 1px;
-    border-left: 0;
-    border-bottom: 0;
-    border-right: 0;
 }
 
 .card-task__title{
