@@ -187,7 +187,7 @@ body.dark-mode{
     font-weight: var(--fw-semibold);
 }
 
-.button-black-white:hover{
+.button-black-white:not(:disabled):hover{
     background: var(--clr-text);
     color: var(--clr-background);
     opacity: 0.8;
