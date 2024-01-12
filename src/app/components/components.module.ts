@@ -16,7 +16,7 @@ import { NavBarLargeComponent } from './dumb/nav-dumbs/nav-bar-large/nav-bar-lar
 import { NavBarMobileComponent } from './dumb/nav-dumbs/nav-bar-mobile/nav-bar-mobile.component';
 import { NavBarComponent } from './smart/nav-bar-smart/nav-bar.component';
 import { NavBarViewComponent } from './view/nav-bar-view/nav-bar-view.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
 import { MAT_CHECKBOX_DEFAULT_OPTIONS, MatCheckboxDefaultOptions, MatCheckboxModule } from '@angular/material/checkbox';
 import { provideClientHydration } from '@angular/platform-browser';
@@ -25,6 +25,7 @@ import { UserConfigViewComponent } from './view/user-config-view/user-config-vie
 import { UserConfigComponent } from './smart/user-config-smart/user-config.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { ThemeButtonComponent } from './dumb/user-config-dumbs/theme-button/theme-button.component';
+import { FormCreateTaskComponent } from './dumb/task-dumbs/form-create-task/form-create-task.component';
 
 @NgModule({
     declarations: [
@@ -48,11 +49,13 @@ import { ThemeButtonComponent } from './dumb/user-config-dumbs/theme-button/them
         UserConfigViewComponent,
         UserConfigComponent,
         ThemeButtonComponent,
+        FormCreateTaskComponent,
     ],
     imports: [
         CommonModule,
         AppRoutingModule,
         FormsModule,
+        ReactiveFormsModule,
         MatCheckboxModule,
         MatButtonToggleModule,
     ],
@@ -77,6 +80,7 @@ import { ThemeButtonComponent } from './dumb/user-config-dumbs/theme-button/them
         UserConfigViewComponent,
         UserConfigComponent,
         ThemeButtonComponent,
+        FormCreateTaskComponent,
     ],
     providers: [
         provideClientHydration(),
