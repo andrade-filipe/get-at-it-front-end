@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-user-config-button',
@@ -10,9 +10,13 @@ export class UserConfigButtonComponent {
 
     ngOnInit(): void {
         if(this.prefersDarkMode){
+            document.body.classList.remove('light-theme');
             document.body.classList.add('dark-theme');
-        } else if (!this.prefersDarkMode){
+            document.getElementById("nav-bar__config-icon")?.setAttribute("src", "assets/config-light.png");
+        } else{
+            document.body.classList.remove('dark-theme');
             document.body.classList.add('light-theme');
+            document.getElementById("nav-bar__config-icon")?.setAttribute("src", "assets/config.png");
         }
     }
 }
