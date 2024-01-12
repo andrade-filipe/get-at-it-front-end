@@ -12,6 +12,7 @@
 }
 
 .pomodoro-timer__time{
+    color: var(--clr-text);
     font-family: var(--font-secondary);
     font-weight: var(--fw-bold);
     font-size: 5rem;

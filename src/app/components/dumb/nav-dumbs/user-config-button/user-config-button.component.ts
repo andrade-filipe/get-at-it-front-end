@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './user-config-button.component.css'
 })
 export class UserConfigButtonComponent {
+    prefersDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
 
+    ngOnInit(): void {
+        if(this.prefersDarkMode){
+            document.body.classList.add('dark-theme');
+        } else if (!this.prefersDarkMode){
+            document.body.classList.add('light-theme');
+        }
+    }
 }

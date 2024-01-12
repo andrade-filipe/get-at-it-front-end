@@ -1,3 +1,7 @@
 <a routerLink="/config">
-    <img class="nav-bar__item--img" src="assets/config.png" alt="">
+    @if(prefersDarkMode){
+        <img class="nav-bar__item--img" src="assets/config-light.png" alt="">
+    } @else {
+        <img class="nav-bar__item--img" src="assets/config.png" alt="">
+    }
 </a>
