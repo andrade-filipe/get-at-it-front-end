@@ -1,9 +1,9 @@
-.form-create-task__form{
+.form-create-sprint__form{
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding-top: 0.5rem;
+    padding: 0.5rem 1rem;
 
     border-color: var(--clr-text);
     border-style: solid;
@@ -13,21 +13,19 @@
     border-right: 0;
 }
 
-.form-create-task__title-input{
+.form-create-sprint__title-input{
     border: none;
     background: var(--clr-background);
-
-    padding-left: 3.5rem;
 }
 
-.form-create-task__title-input:focus-visible{
+.form-create-sprint__title-input:focus-visible{
     outline: none;
 }
 
-.form-create-task__button{
+.form-create-sprint__button{
     padding: 0.2rem 1rem;
 }
 
-.form-create-task__button:disabled{
+.form-create-sprint__button:disabled{
     cursor: not-allowed;
 }

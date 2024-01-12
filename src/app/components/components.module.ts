@@ -26,6 +26,7 @@ import { UserConfigComponent } from './smart/user-config-smart/user-config.compo
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { ThemeButtonComponent } from './dumb/user-config-dumbs/theme-button/theme-button.component';
 import { FormCreateTaskComponent } from './dumb/task-dumbs/form-create-task/form-create-task.component';
+import { FormCreateSprintComponent } from './dumb/sprint-dumbs/form-create-sprint/form-create-sprint.component';
 
 @NgModule({
     declarations: [
@@ -50,6 +51,7 @@ import { FormCreateTaskComponent } from './dumb/task-dumbs/form-create-task/form
         UserConfigComponent,
         ThemeButtonComponent,
         FormCreateTaskComponent,
+        FormCreateSprintComponent,
     ],
     imports: [
         CommonModule,
@@ -81,6 +83,7 @@ import { FormCreateTaskComponent } from './dumb/task-dumbs/form-create-task/form
         UserConfigComponent,
         ThemeButtonComponent,
         FormCreateTaskComponent,
+        FormCreateSprintComponent,
     ],
     providers: [
         provideClientHydration(),

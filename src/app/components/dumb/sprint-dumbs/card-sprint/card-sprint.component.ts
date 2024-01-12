@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { Sprint } from '../../../../model/interfaces/sprint';
-import { setupSprints } from '../../../common/setup-test-sprint';
 
 @Component({
   selector: 'app-card-sprint',

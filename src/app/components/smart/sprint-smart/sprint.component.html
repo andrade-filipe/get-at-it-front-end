@@ -3,6 +3,10 @@
         <app-card-sprint [sprints]="sprints$"/>
     </div>
     <div class="row">
-        <app-create-sprint (createSprint)="handleCreateSprint()"/>
+        @if(creatingSprint){
+            <app-form-create-sprint (createSprintFormData)="handleFormCreateSprintData($event)"></app-form-create-sprint>
+        }@else {
+            <app-create-sprint (createSprint)="handleCreateSprint()"/>
+        }
     </div>
 </div>
