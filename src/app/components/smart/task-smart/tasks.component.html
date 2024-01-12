@@ -3,6 +3,10 @@
         <app-card-task [tasks]="tasks$"/>
     </div>
     <div class="row">
-        <app-create-task (createTask)="handleCreateTask()" />
+        @if(creatingTask){
+            <app-form-create-task (createTaskFormData)="handleFormCreateTaskData($event)"></app-form-create-task>
+        } @else {
+            <app-create-task (createTask)="handleCreateTask()" />
+        }
     </div>
 </div>
