@@ -47,14 +47,20 @@ img, picture, svg, video{
 
 /*UTILS*/
 
-body {
+.light-theme {
     --clr-text: #030303;
     --clr-background: #f8f8ff;
+
+    --clr-button-hover: hsla(0, 0%, 1%, 0.1);
+    --clr-button-disabled: hsla(0, 0%, 1%, 0.2);
 }
 
-body.dark-mode{
+.dark-theme{
     --clr-background: #030303;
     --clr-text: #f8f8ff;
+
+    --clr-button-hover: hsl(240, 100%, 99%, 0.1);
+    --clr-button-disabled: hsl(240, 100%, 99%, 0.2);
 }
 
 .large-text{
@@ -182,10 +188,6 @@ body.dark-mode{
     border-width: 3px;
     border-color: var(--clr-text);
     border-radius: 1rem;
-
-    font-family: var(--font-secondary);
-    font-size: var(--fs-medium);
-    font-weight: var(--fw-semibold);
 }
 
 .button-black-white:not(:disabled):hover{
@@ -201,6 +203,7 @@ body.dark-mode{
 
 .button-black-white:disabled{
     border-color:var(--clr-button-disabled);
+    color: var(--clr-button-disabled);
 }
 
 .top-divider{

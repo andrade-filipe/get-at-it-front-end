@@ -12,7 +12,6 @@ export class ThemeButtonComponent {
 
     @HostListener('click', ['$event'])
     onClick(event: MatButtonToggleChange){
-        console.log(event.value);
         this.changeTheme.emit(event.value);
     }
 }

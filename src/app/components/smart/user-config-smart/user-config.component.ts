@@ -1,4 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-user-config',
@@ -11,10 +12,11 @@ export class UserConfigComponent {
 
     }
 
-    changeTheme(event: string){
-        console.log(event);
-        if(event.match('light')){
-        } else if(event.match('dark')){
+    changeTheme(event: any) {
+        if(event == 'light'){
+
+        } else if (event == 'dark'){
+
         }
     }
 }
