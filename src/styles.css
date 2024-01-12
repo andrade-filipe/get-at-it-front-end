@@ -5,6 +5,7 @@
     --clr-text: #030303;
 
     --clr-button-hover: hsla(0, 0%, 1%, 0.1);
+    --clr-button-disabled: hsla(0, 0%, 1%, 0.2);
 
     --clr-mustard: #ffd447;
     --clr-orange: #f85e00;
@@ -196,4 +197,8 @@ body.dark-mode{
 .button-black-white:active{
     border-color: var(--clr-background);
     transform: scale(0.96);
+}
+
+.button-black-white:disabled{
+    border-color:var(--clr-button-disabled);
 }

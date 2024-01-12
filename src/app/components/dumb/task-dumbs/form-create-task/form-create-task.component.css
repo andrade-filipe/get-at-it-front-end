@@ -23,5 +23,4 @@
 
 .form-create-task__button:disabled{
     cursor: not-allowed;
-    border: none;
 }
