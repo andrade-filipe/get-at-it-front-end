@@ -1,4 +1,4 @@
 <form class="form-create-task__form top-bottom-divider" [formGroup]="createTaskForm" (ngSubmit)="onSubmit()">
     <input class="form-create-task__title-input | medium-text" id="title" type="text" formControlName="title" placeholder="Title" autofocus>
-    <button class="form-create-task__button | button-black-white" type="submit" [disabled]="!createTaskForm.valid">Create</button>
+    <button class="form-create-task__button | button-black-white medium-text-semibold" type="submit" [disabled]="!createTaskForm.valid">Create</button>
 </form>
