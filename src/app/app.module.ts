@@ -10,6 +10,7 @@ import { GlobalHttpInterceptor } from './infrastructure/interceptors/global-http
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentsModule } from './components/components.module';
 
+
 @NgModule({
     declarations: [
         AppComponent,
