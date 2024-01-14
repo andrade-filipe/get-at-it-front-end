@@ -63,14 +63,6 @@ img, picture, svg, video{
     --clr-button-disabled: hsl(240, 100%, 99%, 0.2);
 }
 
-.dark-theme .mat-checkbox-frame::before {
-    border-color: var(--clr-text) !important;
-}
-
-.light-theme .mat-checkbox-frame::before {
-    border-color: var(--clr-text) !important;
-}
-
 .large-text{
     font-family: var(--font-secondary);
     font-weight: var(--fw-normal);
